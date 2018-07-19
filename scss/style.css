@@ -7,21 +7,35 @@ body {
   margin-top: 120px;
 }
 
-.navbar {
+#main-nav {
   -webkit-box-shadow: 2px 2px 2px #3292a6;
           box-shadow: 2px 2px 2px #3292a6;
   opacity: 0.9;
   background: #fff;
 }
 
-.navbar .nav-item {
+#main-nav .nav-item {
   font-size: 1.2rem;
   padding-right: 1.4rem;
 }
 
-.navbar .nav-item .nav-link:hover {
+#main-nav .nav-item .active {
+  border-bottom: #3292a6 2px solid;
+  padding-bottom: 0;
+}
+
+#main-nav .nav-item .nav-link:hover {
   color: #3292a6;
   font-weight: 500;
+}
+
+#second-nav a {
+  color: #888;
+  font-size: 1.5rem;
+}
+
+#second-nav a:hover {
+  color: #3292a6;
 }
 
 #services-showcase {
@@ -32,7 +46,7 @@ body {
 }
 
 #services-showcase .black-overlay {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
   left: 0;
@@ -57,7 +71,7 @@ body {
 }
 
 #supplies-showcase .primary-overlay {
-  background: rgba(50, 146, 166, 0.8);
+  background: rgba(50, 146, 166, 0.7);
   position: absolute;
   top: 0;
   left: 0;

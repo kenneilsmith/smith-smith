@@ -1,6 +1,6 @@
 $primary: #3292a6;
-$primary-overlay: rgba(50, 146, 166, 0.8);
-$black-overlay: rgba(0, 0, 0, 0.8);
+$primary-overlay: rgba(50, 146, 166, 0.7);
+$black-overlay: rgba(0, 0, 0, 0.7);
 
 * {
   box-sizing: border-box;
@@ -8,7 +8,7 @@ $black-overlay: rgba(0, 0, 0, 0.8);
 body {
   margin-top: 120px;
 }
-.navbar {
+#main-nav {
   box-shadow: 2px 2px 2px $primary;
   opacity: 0.9;
   background: #fff;
@@ -17,10 +17,25 @@ body {
     font-size: 1.2rem;
     padding-right: 1.4rem;
 
+    .active {
+      border-bottom: $primary 2px solid;
+      padding-bottom: 0;
+    }
+
     .nav-link:hover {
       color: $primary;
       font-weight: 500;
     }
+  }
+}
+
+#second-nav {
+  a {
+    color: #888;
+    font-size: 1.5rem;
+  }
+  a:hover {
+    color: #3292a6;
   }
 }
 
