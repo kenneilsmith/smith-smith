@@ -42,6 +42,10 @@ body {
   .display-2 {
     font-weight: 400;
   }
+  .btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+  }
 }
 
 #supplies-showcase {

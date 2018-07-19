@@ -44,6 +44,11 @@ body {
   font-weight: 400;
 }
 
+#services-showcase .btn-primary {
+  background-color: #3292a6;
+  border-color: #3292a6;
+}
+
 #supplies-showcase {
   position: relative;
   background: url("../img/instruments_no_overlay.jpg") no-repeat;
