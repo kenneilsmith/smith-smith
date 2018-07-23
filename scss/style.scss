@@ -1,4 +1,5 @@
 $primary: #3292a6;
+$primary-fade: #9edfec;
 $primary-overlay: rgba(50, 146, 166, 0.7);
 $black-overlay: rgba(0, 0, 0, 0.7);
 
@@ -9,17 +10,21 @@ body {
   margin-top: 120px;
 }
 #main-nav {
-  box-shadow: 2px 2px 2px $primary;
+  box-shadow: 1px 1px 2px $primary;
   opacity: 0.9;
   background: #fff;
 
   .nav-item {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding-right: 1.4rem;
+    min-width: 120px;
+    text-align: center;
+    text-transform: uppercase;
 
     .active {
       border-bottom: $primary 2px solid;
       padding-bottom: 0;
+      font-weight: 500;
     }
 
     .nav-link:hover {
@@ -56,11 +61,21 @@ body {
 
   .display-2 {
     font-weight: 400;
+    text-transform: uppercase;
   }
   .btn-primary {
     background-color: $primary;
     border-color: $primary;
   }
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+}
+.btn-primary:hover {
+  background-color: $primary-fade;
+  border-color: $primary-fade;
 }
 
 #supplies-showcase {
@@ -80,7 +95,11 @@ body {
 
   .display-2 {
     font-weight: 400;
+    text-transform: uppercase;
   }
+}
+.fas {
+  color: $primary;
 }
 
 .fab {
@@ -94,6 +113,103 @@ body {
 footer {
   min-height: 50px;
   background: #444;
+  width: 100%;
+}
+
+.carousel-item {
+  height: 600px;
+}
+
+.carousel-image-1 {
+  background: url("../img/medequip.jpg");
+  background-size: cover;
+}
+.carousel-image-2 {
+  background: url("../img/dental.jpg");
+  background-size: cover;
+}
+.carousel-image-3 {
+  background: url("../img/office-furnitures.jpg");
+  background-size: cover;
+}
+.carousel-image-4 {
+  background: url("../img/ITService.jpeg");
+  background-size: cover;
+}
+.carousel-image-5 {
+  background: url("../img/fume-hood.jpg");
+  background-size: cover;
+}
+.carousel-image-6 {
+  background: url("../img/consult.jpg");
+  background-size: cover;
+}
+
+#bold {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: $primary;
+}
+hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: $primary;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+hr:after {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: $primary;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+h5 {
+  text-transform: uppercase;
+}
+
+.spacing {
+  height: 100px;
+}
+.sm-spacing {
+  height: 10px;
+}
+#contact {
+  background: #333333;
+  color: #f4f4f4;
+  padding-bottom: 80px;
+
+  h1,
+  h2,
+  h3 {
+    margin: 0 0 35px 0;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.6em;
+  }
+  a {
+    color: #26a5d3;
+  }
+  a:hover,
+  a:focus {
+    text-decoration: none;
+    color: #26a5d3;
+  }
+  textarea.form-control {
+    height: 100px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -110,5 +226,9 @@ footer {
     h1 {
       font-size: 4rem;
     }
+  }
+
+  .card-img-top {
+    max-height: 200px;
   }
 }

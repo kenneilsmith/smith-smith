@@ -8,20 +8,24 @@ body {
 }
 
 #main-nav {
-  -webkit-box-shadow: 2px 2px 2px #3292a6;
-          box-shadow: 2px 2px 2px #3292a6;
+  -webkit-box-shadow: 1px 1px 2px #3292a6;
+          box-shadow: 1px 1px 2px #3292a6;
   opacity: 0.9;
   background: #fff;
 }
 
 #main-nav .nav-item {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding-right: 1.4rem;
+  min-width: 120px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 #main-nav .nav-item .active {
   border-bottom: #3292a6 2px solid;
   padding-bottom: 0;
+  font-weight: 500;
 }
 
 #main-nav .nav-item .nav-link:hover {
@@ -56,11 +60,22 @@ body {
 
 #services-showcase .display-2 {
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 #services-showcase .btn-primary {
   background-color: #3292a6;
   border-color: #3292a6;
+}
+
+.btn-primary {
+  background-color: #3292a6;
+  border-color: #3292a6;
+}
+
+.btn-primary:hover {
+  background-color: #9edfec;
+  border-color: #9edfec;
 }
 
 #supplies-showcase {
@@ -81,6 +96,11 @@ body {
 
 #supplies-showcase .display-2 {
   font-weight: 400;
+  text-transform: uppercase;
+}
+
+.fas {
+  color: #3292a6;
 }
 
 .fab {
@@ -95,6 +115,115 @@ body {
 footer {
   min-height: 50px;
   background: #444;
+  width: 100%;
+}
+
+.carousel-item {
+  height: 600px;
+}
+
+.carousel-image-1 {
+  background: url("../img/medequip.jpg");
+  background-size: cover;
+}
+
+.carousel-image-2 {
+  background: url("../img/dental.jpg");
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url("../img/office-furnitures.jpg");
+  background-size: cover;
+}
+
+.carousel-image-4 {
+  background: url("../img/ITService.jpeg");
+  background-size: cover;
+}
+
+.carousel-image-5 {
+  background: url("../img/fume-hood.jpg");
+  background-size: cover;
+}
+
+.carousel-image-6 {
+  background: url("../img/consult.jpg");
+  background-size: cover;
+}
+
+#bold {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #3292a6;
+}
+
+hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #3292a6;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+hr:after {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #3292a6;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+h5 {
+  text-transform: uppercase;
+}
+
+.spacing {
+  height: 100px;
+}
+
+.sm-spacing {
+  height: 10px;
+}
+
+#contact {
+  background: #333333;
+  color: #f4f4f4;
+  padding-bottom: 80px;
+}
+
+#contact h1,
+#contact h2,
+#contact h3 {
+  margin: 0 0 35px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#contact p {
+  margin: 0 0 25px;
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+#contact a {
+  color: #26a5d3;
+}
+
+#contact a:hover,
+#contact a:focus {
+  text-decoration: none;
+  color: #26a5d3;
+}
+
+#contact textarea.form-control {
+  height: 100px;
 }
 
 @media (max-width: 768px) {
@@ -109,6 +238,9 @@ footer {
   }
   #supplies-showcase h1 {
     font-size: 4rem;
+  }
+  .card-img-top {
+    max-height: 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */
